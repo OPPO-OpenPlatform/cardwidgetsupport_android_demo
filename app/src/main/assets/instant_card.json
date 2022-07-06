@@ -1,0 +1,19 @@
+{
+  "child": [
+    {
+      "type": "text",
+      "id": "cardType",
+      "text": ""
+    },
+    {
+      "type": "text",
+      "id": "cardId",
+      "text": ""
+    },
+    {
+      "type": "text",
+      "id": "uri",
+      "text": "@string/text2"
+    }
+  ]
+}

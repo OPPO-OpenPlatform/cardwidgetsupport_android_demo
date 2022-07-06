@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.card.widget.user">
+
+    <application>
+
+        <provider
+            android:name="com.card.widget.support.user.provider.UserCardWidgetProvider"
+            android:authorities="com.card.widget.support.provider.user"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appcard.action.APPCARD_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.card.provider"
+                android:resource="@xml/user_appwidget" />
+        </provider>
+
+    </application>
+</manifest>

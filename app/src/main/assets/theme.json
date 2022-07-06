@@ -1,0 +1,66 @@
+{
+  "type": "constraint",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "id": "parent1",
+  "package": "com.card.widget.support",
+  "child": [
+    {
+      "type": "button",
+      "id": "t1",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toTopOf": "parent",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "button的文本颜色是support的主题色",
+      "typeface": "bold",
+      "textColor": "?attr/couiTintControlNormal",
+      "textSize": 12
+    },
+    {
+      "type": "button",
+      "id": "t2",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "t1",
+      "layout_marginTop": 8,
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "button的背景颜色是support的主题色",
+      "typeface": "bold",
+      "textColor": "#FFFFFF",
+      "textSize": 14,
+      "background": "?attr/couiTintControlNormal"
+    },
+    {
+      "type": "text",
+      "id": "t3",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "t2",
+      "layout_marginTop": 8,
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "text的文本是support的主题色",
+      "typeface": "bold",
+      "textColor": "?attr/couiTintControlNormal",
+      "textSize": 14
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "t3",
+      "layout_marginTop": 8,
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "text的背景是support的主题色",
+      "typeface": "bold",
+      "textColor": "#FFFFFF",
+      "textSize": 14,
+      "background": "?attr/couiTintControlNormal"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<card-provider xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:oplus_card_desc="@string/name_card_item"
+    app:oplus_card_name="@string/name_card_item"
+    app:oplus_card_protocol="JSON"
+    app:previewImage="@drawable/image2"
+    app:oplus_card_size="two2two"
+    app:oplus_card_type="46" />

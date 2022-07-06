@@ -1,0 +1,3 @@
+include ':userCard'
+include ':app'
+rootProject.name = "CardWidgetSupportDemo"

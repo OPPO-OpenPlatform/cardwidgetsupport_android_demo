@@ -1,0 +1,130 @@
+{
+  "type": "constraint",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "id": "parent1",
+  "package": "com.card.widget.support",
+  "child": [
+    {
+      "type": "text",
+      "id": "tv1",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintTop_toTopOf": "parent",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "圆形进度条",
+      "textSize": 10,
+      "textColor": "#4D000000"
+    },
+    {
+      "type": "progress",
+      "id": "p1",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "tv1",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content"
+    },
+    {
+      "type": "text",
+      "id": "tv2",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintTop_toBottomOf": "p1",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "条形进度条-确定进度",
+      "textSize": 10,
+      "textColor": "#4D000000"
+    },
+    {
+      "type": "progress",
+      "id": "p2",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "tv2",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "progressType": "horizontal",
+      "progressDrawable": "@drawable/progress_drawable",
+      "minWidth": 300,
+      "minHeight": 30,
+      "min": 0,
+      "max": 100,
+      "progress": 50,
+      "secondaryProgress": 80
+    },
+    {
+      "type": "text",
+      "id": "tv3",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintTop_toBottomOf": "p2",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "条形进度条-不确定进度",
+      "textSize": 10,
+      "textColor": "#4D000000"
+    },
+    {
+      "type": "progress",
+      "id": "p3",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "tv3",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "progressType": "horizontal",
+      "minWidth": 300,
+      "minHeight": 30,
+      "min": 0,
+      "max": 100,
+      "progress": 50,
+      "secondaryProgress": 80,
+      "indeterminate": true,
+      "indeterminateTint": "#FFFF0000"
+    },
+    {
+      "type": "text",
+      "id": "tv4",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintTop_toBottomOf": "p3",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "条形进度条-进度动画",
+      "textSize": 10,
+      "textColor": "#4D000000"
+    },
+    {
+      "type": "button",
+      "id": "btn1",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "tv4",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "更新进度",
+      "onClick": [
+        {
+          "type": "setProgress",
+          "id": "p4",
+          "progress": 100,
+          "animateEnable": true
+        }
+      ]
+    },
+    {
+      "type": "progress",
+      "id": "p4",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "btn1",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "progressType": "horizontal",
+      "minWidth": 300,
+      "minHeight": 30,
+      "min": 0,
+      "max": 100,
+      "progress": 0
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "constraint",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "id": "parent1",
+  "package": "com.card.widget.support",
+  "child": [
+    {
+      "type": "constraint",
+      "layout_width": "match_parent",
+      "layout_height": "match_parent",
+      "layout_constraintHorizontal_chainStyle": "spread_inside",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_marginStart": 6,
+      "layout_marginTop": 6,
+      "id": "card1",
+      "child": [
+        {
+          "type": "image",
+          "layout_width": 200,
+          "layout_height": 120,
+          "layout_constraintTop_toTopOf": "parent",
+          "id": "image1",
+          "src": "@drawable/image1",
+          "scaleType": "centerCrop"
+        }
+      ]
+    }
+  ]
+}

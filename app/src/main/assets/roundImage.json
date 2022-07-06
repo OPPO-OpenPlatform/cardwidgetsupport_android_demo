@@ -1,0 +1,46 @@
+{
+  "type": "constraint",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "id": "parent1",
+  "package": "com.card.widget.support",
+  "child": [
+    {
+      "type": "roundImage",
+      "id": "image1",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "src": "@drawable/image1",
+      "scaleType": "centerCrop",
+      "imageType": 1,
+      "borderRadius": 4
+    },
+    {
+      "type": "roundImage",
+      "id": "image2",
+      "layout_constraintStart_toEndOf": "image1",
+      "layout_marginStart": 8,
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "src": "@drawable/image2",
+      "scaleType": "centerCrop",
+      "imageType": 1,
+      "borderRadius": 10
+    },
+    {
+      "type": "roundImage",
+      "id": "image3",
+      "layout_constraintStart_toEndOf": "image2",
+      "layout_marginStart": 8,
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "src": "@drawable/image3",
+      "scaleType": "centerCrop",
+      "imageType": 1,
+      "borderRadius": 20,
+      "hasBorder": true,
+      "borderColor": "#00FF00"
+    }
+  ]
+}

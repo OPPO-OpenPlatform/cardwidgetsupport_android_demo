@@ -1,0 +1,148 @@
+{
+  "type": "constraint",
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "id": "parent1",
+  "package": "com.card.widget.support",
+  "child": [
+    {
+      "type": "button",
+      "id": "t1",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toTopOf": "parent",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "startActivity",
+      "typeface": "bold",
+      "textColor": "#000000",
+      "textSize": 12,
+      "onClick": [
+        {
+          "type": "activity",
+          "packageName": "com.card.widget.support",
+          "action": "com.card.widget.testactivity.action"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "id": "t2",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "t1",
+      "layout_marginTop": 20,
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "startService",
+      "typeface": "bold",
+      "textColor": "#000000",
+      "textSize": 12,
+      "onClick": [
+        {
+          "type": "service",
+          "packageName": "com.card.widget.support",
+          "action": "com.card.widget.support.testservices.action"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "id": "t3",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "t2",
+      "layout_marginTop": 20,
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "contentProvider",
+      "typeface": "bold",
+      "textColor": "#000000",
+      "textSize": 12,
+      "onClick": [
+        {
+          "type": "cp",
+          "uri": "content://com.card.widget.support.dataprovider",
+          "method": "click_cp"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "id": "t4",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "t3",
+      "layout_marginTop": 20,
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "clickAnim",
+      "typeface": "bold",
+      "textColor": "#000000",
+      "textSize": 12,
+      "onClick": [
+        {
+          "type": "clickAnim",
+          "animSet":[
+            {
+              "params": {
+                "alpha": [
+                  0,
+                  1
+                ]
+              },
+              "duration": 2000,
+              "startDelay": 500
+            },
+            {
+              "params": {
+                "rotation": [
+                  0,
+                  360
+                ]
+              },
+              "duration": 2000,
+              "startDelay": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "id": "t5",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_constraintTop_toBottomOf": "t4",
+      "layout_marginTop": 20,
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "text": "ClickApiTag",
+      "typeface": "bold",
+      "textColor": "#000000",
+      "textSize": 12,
+      "onClick": [
+        {
+          "type": "setText",
+          "id": "t5",
+          "newText": "我是点击之后的按钮"
+        },
+        {
+          "type": "setTextSize",
+          "id": "t5",
+          "newTextSize": 16
+        },
+        {
+          "type": "setTextColorString",
+          "id": "t5",
+          "newTextColor": "@color/purple_700"
+        },
+        {
+          "type": "setBackground",
+          "id": "t5",
+          "background": "@drawable/button_bg"
+        }
+      ]
+    }
+  ]
+}

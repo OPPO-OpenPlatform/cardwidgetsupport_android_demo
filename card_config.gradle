@@ -1,0 +1,6 @@
+
+dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation 'com.oplus.card.widget:cardwidget:1.2.3-external'
+    implementation "com.oplus.smartengine:smartenginehelper:1.0.23"
+}

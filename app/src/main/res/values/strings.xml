@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CardWidgetDemo</string>
+    <string name="list_btn_preview">预 览</string>
+    <string name="list_btn_union_test">联 调</string>
+    <string name="name_card_item">测试卡片</string>
+    <string name="name_step_card_item">计步卡片</string>
+    <string name="list_btn_normal_parser">LinearLayout布局示例</string>
+    <string name="list_btn_update_data">更新数据片段</string>
+    <string name="list_page_update_data">是否开启分页加载数据</string>
+    <string name="list_switch_toast_text">请先加载默认列表</string>
+    <string name="text_use_notice">*需要先安装UI引擎的apk才能正常使用\n （apk在项目工程的根目录下:SmartEngine.apk）</string>
+
+    <!--业务卡片内容描述-->
+    <string name="card_text1">Hello</string>
+    <string name="card_text13">收入</string>
+    <string name="card_text14">¥160.6</string>
+    <string name="card_text15">支出</string>
+    <string name="card_text16">¥5560</string>
+    <string name="card_text17">小医生</string>
+    <string name="card_text18">私生活</string>
+    <string name="card_text19">异形世界</string>
+    <string name="card_text20">西部世界</string>
+    <string name="card_text21">读书笔记</string>
+    <string name="card_text22">2020/01/23</string>
+    <string name="update_post">发送刷新数据</string>
+    <string name="hint_assert_tips">请输入assert下要预览的布局名称</string>
+    <string name="hint_sd_tips">请输入sd卡根目录下有效的布局名称(xx.json)</string>
+    <string name="update_refresh_tips">最近请求刷新时间：</string>
+    <string name="tips_files_name_effect">请输入格式合法的布局名称</string>
+    <string name="tips_assert_files_effect">请输入assert目录下存在的布局文件</string>
+    <string name="tips_sd_files_effect">需要将目标布局文件push到SD卡\n根目录下</string>
+    <string name="opera_notice_tips">( 操作之前需要本地安装负一屏和UI引擎对应的apk，然后到负一屏的卡片商店上添加对应的卡片 )</string>
+    <string name="card_text23">滚滚长江东逝水，浪花淘尽英雄。是非成败转头空。青山依旧在，几 青山依旧在</string>
+</resources>
